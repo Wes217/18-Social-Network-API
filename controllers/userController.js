@@ -54,7 +54,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-
+  // update a user
   async updateUser(req,res) {
     try{
       const user = await User.findOneAndUpdate(
